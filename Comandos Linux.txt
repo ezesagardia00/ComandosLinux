@@ -1,0 +1,36 @@
+mkdir - crea nuevo directorio
+touch - Crea un archivo
+cat - muestra el contenido del archivo
+mv - renombra el archivo
+rm - borra el archivo
+ls - lista el contenido
+
+---PERMISOS---
+chmod 600 - Permite que el dueño pueda leer y escribir el archivo
+chmod 400 - todos pueden leerlo, pero el dueño solo puede escribirlo
+chmod +x - Añade Permisos de ejecucion para todos
+chmod 750 - Permite que el dueño tenga todos los permisos, el grupo pueda leer/ejecutar y otros no tengan acceso
+
+---Redireccion de Salida---
+echo " " >> archivo.txt - Llenar el archivo con contenido
+grep " " - encuentra lineas especificas
+grep " " archivo.txt > nuevo.txt - Guarda las lineas en un nuevo archivo
+grep -i " " - Ignora mayusculas/minusculas
+grep -n " " - muestra el numero de linea donde aparece
+grep -v " " - Encuentra todas las lineas que no contienen lo agregado al contenido
+grep -q - Realiza la búsqueda sin mostrar salida en la terminal.
+
+./archivo.txt - Ejecuta el script
+
+$(whoami) - Nombre de usuario actual
+$(date) - Fecha y hora actual
+$(uptime -p) - Tiempo de actividad del sistema
+df -h | grep "/$" - Info sobre el espacio en disco del sistema de archivos raiz (/)
+
+ps - Lista procesos del sistema
+-eo - Define columnas a mostrar (PID, USER, %CPU, etc)
+--sort - Ordena los resultados
+head - Limita el numero de filas mostradas
+free - Muestra informacion de memoria en formato legible (-h)
+ 
+tar -tf - muestra el contenido del archivo comprimido
